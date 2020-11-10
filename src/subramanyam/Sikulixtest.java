@@ -10,7 +10,7 @@ import org.sikuli.script.Location;
 import org.sikuli.script.Match;
 import org.sikuli.script.Screen;
 
-public class sikulix 
+public class Sikulixtest 
 {
 
 	public static void main(String[] args) throws Exception 

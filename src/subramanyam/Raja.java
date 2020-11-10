@@ -7,11 +7,11 @@ public class Raja
 
 	public static void main(String[] args)
 	{
-		System.setProperty("webdriver.chrome.driver","G:\\workspace\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","G:\\chromedriver.exe");
 		ChromeDriver driver=new ChromeDriver();
-		driver.get("https://www.google.co.in/");
+		driver.get("https://login.yahoo.com/");
 		driver.manage().window().maximize();
-		driver.manage().window().minimize();
+		//driver.manage().window().minimize();
 
 	}
 

@@ -3,7 +3,7 @@ package subramanyam;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-public class webpushnottest28 
+public class Webpushnottest28 
 {
 
 	public static void main(String[] args) 

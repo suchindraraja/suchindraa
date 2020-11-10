@@ -1,12 +1,10 @@
 package subramanyam;
 
-import java.util.List;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class javascriptexec19 
+public class Javascriptexecualert24 
 {
 
 	public static void main(String[] args) throws Exception
@@ -15,15 +13,14 @@ public class javascriptexec19
 		System.setProperty("webdriver.chrome.silentOutput","true");
 		ChromeDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://semantic-ui.com/modules/dropdown.html");
+		driver.executeScript("window.alert('site is ready to launch');");
+		Thread.sleep(5000);
+		driver.switchTo().alert().dismiss();
+		driver.get("https://www.google.co.in/");
 		Thread.sleep(10000);
-		List<WebElement> l=driver.findElements(By.xpath("//h4[text()='Search Selection']/following-sibling::div/div[2]/div"));
-		for(WebElement e:l)
-		{
-			String x=(String) driver.executeScript("return(arguments[0].textContent);",e);
-			System.out.println(x);
-		}
-		driver.close();
+		driver.findElement(By.name("q")).sendKeys("kalam",Keys.ENTER);
+		Thread.sleep(5000);
+
 	}
 
 }

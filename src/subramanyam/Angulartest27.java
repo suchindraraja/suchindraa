@@ -13,7 +13,7 @@ import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class ajaxtest27 
+public class Angulartest27 
 {
 
 	public static void main(String[] args) throws Exception

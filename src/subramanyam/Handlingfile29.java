@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class handlingfile29 
+public class Handlingfile29 
 {
 
 	public static void main(String[] args) throws Exception
