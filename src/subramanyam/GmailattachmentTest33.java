@@ -6,6 +6,7 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -39,10 +40,11 @@ public class GmailattachmentTest33
 		driver.findElement(By.name("subjectbox")).sendKeys("Window automation");
 		driver.findElement(By.xpath("//div[@aria-label='Message Body']")).sendKeys("hai SDET, how are you");
 		//goto attachment via click on attachment icon
-		driver.findElement(By.xpath("//div[@data-tooltip='Attach files']/descendant::div[1]")).click();
+		driver.findElement(By.xpath("//div[@data-tooltip='Attach files']/descendant::div[1]"));
+		
 		//handle file upload window(java robot)
 		Thread.sleep(5000); //wait for file upload popup window
-		StringSelection f=new StringSelection("C:\\\\Users\\\\Public\\\\Pictures\\\\myscannedpicture2(2)");
+		StringSelection f=new StringSelection("C:\\Users\\Public\\pic.jpg");
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(f,null);
 		Robot r=new Robot();
 		r.keyPress(KeyEvent.VK_CONTROL);
